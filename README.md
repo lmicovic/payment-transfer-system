@@ -54,8 +54,7 @@ src/
 ├── controller/             # REST controllers
 ├── service/                # Business logic
 ├── repository/             # Spring Data repositories
-├── model/                  # Entity definitions
-└── exceptions/             # Custom exception classes
+└── model/                  # Entity definitions
 ```
 
 ## How to run
