@@ -1,9 +1,17 @@
 # Payment Transfer System
 
+## Table of Contents
+- [Overview](#overview)
+- [Features](#features)
+- [Technology used](#technology-used)
+- [Importand Endpoints](#importand-endpoints)
+- [Project Structure](#project-structure)
+- [How to run](#how-to-run)
+
 ## Overview
 A simple and secure [Spring Boot](https://spring.io/projects/spring-boot "Spring Boot") based payment transfer service that allows users to transfer funds between accounts within a digital banking platform. This service includes robust error handling and transaction logging to ensure data integrity and traceability.
 
-## Key Capabilities
+## Features
 - **Secure Transfers:** Enables users to move funds from one internal account to another.
 
 - **Validation:** Ensures the source account has sufficient funds and prevents illogical transactions (e.g., same-source and destination).
