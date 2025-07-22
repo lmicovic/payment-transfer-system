@@ -1,0 +1,9 @@
+2025-07-22 11:45:10 [http-nio-8080-exec-7] ERROR transactions_error - Transaction[sourceAccountId: 1, destinationAccountId: 1000, amount: 20] - Account with ID: 1000 not found.
+2025-07-22 12:27:34 [http-nio-8080-exec-2] ERROR transactions_error - Transaction[sourceAccountId: 1, destinationAccountId: 1000, amount: 20] - Account with ID: 1000 not found.
+2025-07-22 12:28:05 [http-nio-8080-exec-10] ERROR transactions_error - Transaction[sourceAccountId: 1, destinationAccountId: 3, amount: 2000] - AccountDTO [id=1, firstname=Pera, lastname=Peric, email=peraperic@gmail.com, balance=100.00] has insufficient fund to complete transaction of: 2000
+2025-07-22 13:21:25 [http-nio-8080-exec-1] ERROR transactions_error - Transaction[sourceAccountId: 1, destinationAccountId: 1, amount: 20] - Cannot transfer to the same account. sourceAccoutId: 1 - destinationAccountId: 1
+2025-07-22 13:23:07 [http-nio-8080-exec-1] ERROR transactions_error - Transaction[sourceAccountId: 1, destinationAccountId: 1, amount: 20] - Cannot transfer to the same account. sourceAccoutId: 1 - destinationAccountId: 1
+2025-07-22 13:54:26 [http-nio-8080-exec-5] ERROR transactions_error - Transaction[sourceAccountId: 1, destinationAccountId: 10, amount: 20] - Account with id: 10 not found.
+2025-07-22 13:54:36 [http-nio-8080-exec-1] ERROR transactions_error - Transaction[sourceAccountId: 20, destinationAccountId: 10, amount: 20] - Account with id: 20 not found.
+2025-07-22 14:40:56 [http-nio-8080-exec-1] ERROR transactions_error - Transaction[sourceAccountId: 20, destinationAccountId: 10, amount: 20] - Account with id: 20 not found.
+2025-07-22 14:42:10 [http-nio-8080-exec-1] ERROR transactions_error - Transaction[sourceAccountId: 20, destinationAccountId: 10, amount: 20] - Account with id: 20 not found.

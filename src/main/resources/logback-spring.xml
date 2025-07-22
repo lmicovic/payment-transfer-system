@@ -1,0 +1,84 @@
+<configuration>
+
+    <property name="LOG_DIR" value="logs" />
+	
+	<!-- Appender: Account -->
+	<appender name="ACCOUNT" class="ch.qos.logback.core.rolling.RollingFileAppender">
+        <file>${LOG_DIR}/account.log</file>
+        <rollingPolicy class="ch.qos.logback.core.rolling.TimeBasedRollingPolicy">
+            <fileNamePattern>${LOG_DIR}/account-%d{yyyy-MM-dd}.log</fileNamePattern>
+            <maxHistory>7</maxHistory>
+        </rollingPolicy>
+        <encoder>
+            <pattern>%d{yyyy-MM-dd HH:mm:ss} [%thread] %-5level %logger{36} - %msg%n</pattern>
+        </encoder>
+    </appender>		
+	
+	<!-- Appender: Account - ERROR -->
+	<appender name="ACCOUNT_ERROR" class="ch.qos.logback.core.rolling.RollingFileAppender">
+        <file>${LOG_DIR}/account-error.log</file>
+        <rollingPolicy class="ch.qos.logback.core.rolling.TimeBasedRollingPolicy">
+            <fileNamePattern>${LOG_DIR}/account-error-%d{yyyy-MM-dd}.log</fileNamePattern>
+            <maxHistory>7</maxHistory>
+        </rollingPolicy>
+        <encoder>
+            <pattern>%d{yyyy-MM-dd HH:mm:ss} [%thread] %-5level %logger{36} - %msg%n</pattern>
+        </encoder>
+    </appender>		
+	
+    <!-- Appender: Transactions -->
+    <appender name="TRANSACTIONS" class="ch.qos.logback.core.rolling.RollingFileAppender">
+        <file>${LOG_DIR}/transactions.log</file>
+        <rollingPolicy class="ch.qos.logback.core.rolling.TimeBasedRollingPolicy">
+            <fileNamePattern>${LOG_DIR}/transactions-%d{yyyy-MM-dd}.log</fileNamePattern>
+            <maxHistory>7</maxHistory>
+        </rollingPolicy>
+        <encoder>
+            <pattern>%d{yyyy-MM-dd HH:mm:ss} [%thread] %-5level %logger{36} - %msg%n</pattern>
+        </encoder>
+    </appender>
+
+	<!-- Appender: Transactions - ERROR -->
+	<appender name="TRANSACTIONS_ERROR" class="ch.qos.logback.core.rolling.RollingFileAppender">
+        <file>${LOG_DIR}/transactions-error.log</file>
+        <rollingPolicy class="ch.qos.logback.core.rolling.TimeBasedRollingPolicy">
+            <fileNamePattern>${LOG_DIR}/transactions-error-%d{yyyy-MM-dd}.log</fileNamePattern>
+            <maxHistory>7</maxHistory>
+        </rollingPolicy>
+        <encoder>
+            <pattern>%d{yyyy-MM-dd HH:mm:ss} [%thread] %-5level %logger{36} - %msg%n</pattern>
+        </encoder>
+    </appender>
+
+    <!-- Appender: Console (default Spring Boot logs) -->
+    <appender name="CONSOLE" class="ch.qos.logback.core.ConsoleAppender">
+        <encoder>
+            <pattern>%d{yyyy-MM-dd HH:mm:ss} %-5level %logger{36} - %msg%n</pattern>
+        </encoder>
+    </appender>
+
+	<!-- Logger: Account -->
+    <logger name="account" level="INFO" additivity="false">
+        <appender-ref ref="ACCOUNT" />
+    </logger>
+
+	<!-- Logger: Account - ERROR -->
+    <logger name="account_error" level="INFO" additivity="false">
+        <appender-ref ref="ACCOUNT_ERROR" />
+    </logger>
+
+    <!-- Logger: Transactions -->
+    <logger name="transactions" level="INFO" additivity="false">
+        <appender-ref ref="TRANSACTIONS" />
+    </logger>
+
+	<!-- Logger: Transactions - ERROR -->
+	<logger name="transactions_error" level="INFO" additivity="false">
+        <appender-ref ref="TRANSACTIONS_ERROR" />
+    </logger>
+
+    <!-- Root logger: console only -->
+    <root level="INFO">
+        <appender-ref ref="CONSOLE" />
+    </root>
+</configuration>

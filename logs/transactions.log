@@ -1,0 +1,15 @@
+2025-07-22 12:27:39 [http-nio-8080-exec-1] INFO  transactions - Transaction[sourceAccountId: 1, destinationAccountId: 3, amount: 20] - SUCCESSFUL
+2025-07-22 12:27:57 [http-nio-8080-exec-3] INFO  transactions - Transaction[sourceAccountId: 3, destinationAccountId: 1, amount: 20] - SUCCESSFUL
+2025-07-22 12:33:00 [http-nio-8080-exec-1] INFO  transactions - Transaction[sourceAccountId: 1, destinationAccountId: 3, amount: 20] - SUCCESSFUL
+2025-07-22 12:33:53 [http-nio-8080-exec-6] INFO  transactions - Transaction[sourceAccountId: 1, destinationAccountId: 3, amount: 20] - SUCCESSFUL
+2025-07-22 12:34:25 [http-nio-8080-exec-3] INFO  transactions - Transaction[sourceAccountId: 1, destinationAccountId: 3, amount: 20] - SUCCESSFUL
+2025-07-22 12:34:26 [http-nio-8080-exec-6] INFO  transactions - Transaction[sourceAccountId: 1, destinationAccountId: 3, amount: 20] - SUCCESSFUL
+2025-07-22 12:35:29 [http-nio-8080-exec-7] INFO  transactions - Transaction[sourceAccountId: 1, destinationAccountId: 3, amount: 20] - SUCCESSFUL
+2025-07-22 12:44:57 [http-nio-8080-exec-2] INFO  transactions - Transaction[sourceAccountId: 1, destinationAccountId: 3, amount: 20] - SUCCESSFUL
+2025-07-22 13:12:13 [http-nio-8080-exec-1] INFO  transactions - Transaction[sourceAccountId: 1, destinationAccountId: 1, amount: 20] - SUCCESSFUL
+2025-07-22 13:18:56 [http-nio-8080-exec-1] INFO  transactions - Transaction[sourceAccountId: 1, destinationAccountId: 1, amount: 20] - SUCCESSFUL
+2025-07-22 13:19:43 [http-nio-8080-exec-1] INFO  transactions - Transaction[sourceAccountId: 1, destinationAccountId: 1, amount: 20] - SUCCESSFUL
+2025-07-22 13:20:08 [http-nio-8080-exec-1] INFO  transactions - Transaction[sourceAccountId: 1, destinationAccountId: 1, amount: 20] - SUCCESSFUL
+2025-07-22 13:21:33 [http-nio-8080-exec-3] INFO  transactions - Transaction[sourceAccountId: 0, destinationAccountId: 1, amount: 20] - SUCCESSFUL
+2025-07-22 13:54:07 [http-nio-8080-exec-2] INFO  transactions - Transaction[sourceAccountId: 1, destinationAccountId: 3, amount: 20] - SUCCESSFUL
+2025-07-22 14:42:19 [http-nio-8080-exec-6] INFO  transactions - Transaction[sourceAccountId: 1, destinationAccountId: 2, amount: 20] - SUCCESSFUL
